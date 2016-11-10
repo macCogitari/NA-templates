@@ -13,13 +13,12 @@ namespace training
 
 template<typename InputIt, typename UnaryPredicate>
 InputIt find_if(InputIt begin, InputIt end, UnaryPredicate pred){
-    InputIt iter=begin;
-    for( ; iter != end; ++iter){
-        if (pred(*iter)){
+    for( ; begin != end; ++begin){
+        if (pred(*begin)){
             break;
         }
     }
-    return iter;
+    return begin;
 }
 
 }
