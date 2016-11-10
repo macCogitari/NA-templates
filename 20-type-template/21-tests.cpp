@@ -15,6 +15,7 @@ TEST_CASE("size of vector", "[container_wrapper]")
 }
 
 TEST_CASE("size of list", "[container_wrapper]")
+          // nazwa testu    // tagi
 {
     container_wrapper<std::list<float>> c1;
     REQUIRE(c1.size() == 0);
