@@ -94,6 +94,10 @@ R and L value reference
 forwarding references
 
 
+std::forward<F>(f)() potrafi wywołać funkcję jako L albo R value
+czyli tak jak obiekt z nazwą albo bez nazwy
+
+
 
 
 
