@@ -186,3 +186,61 @@ std::tuple
 emplace konstruuje typ z podanego obiektu
 
 
+
+
+
+--------------------------
+
+
+dot pytań
+vector<bool>
+value types i reference 
+kiedy mogą się przydać szablony
+składnia
+referencje które wiszą
+składnia  które wyrażanie jest poprawnie użyte w tym miejscu
+pair trzeba będzie uzupełnić
+czy to się skompiluje czy błąd będzie taki czy taki
+
+pytania o traity
+jaki trait sprawdzi nam to
+czego wewenątrz scopa traita można się spodziewać
+który trait wymaga wiedzy z wewnątrz kompilatora
+czy da się to sprawdzać używając SFINAE
+
+nie będzie szvlonów zmiennych raczej
+
+pytanie ze skłądni partial template specialization
+bazowy trait
+w jaki sposób zrobić specjalizację traita żeby dało prawidłową odpowiedź
+
+Czy dany kod się skompiluje czy się zlinkuje itd.
+
+wszystkie definicje szablonów powinny być widoczne wszędzie gdzie są użyte
+
+szablony są by default inline
+specjalizacje nie są by default inline 
+
+SFINAE rozwinięcie skrótu
+która implementacja enable_if jest poprawna
+
+czy w momencie kiedy zdefiniujemy kilka przeładowań
+i zrobimy enable_if czy dana implementacja będzie
+ambigous , nielegalna itp
+
+Coś o błędach kompilacji
+co to może być
+
+o Expression SFINAE
+żeby zrozumieć kod
+void_t też w takiej formie
+
+Values and non-forwarding references
+
+przykłady i pytania dotyczące typu 
+
+auto and decletape
+
+collapsing references
+
+Variadic templates składnia
