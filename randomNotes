@@ -6,3 +6,36 @@ c++11
 
 te specjalizacje szablonów dla voida są dostępne od c++14 
 bo vector<bool> 
+
+specjalizacje szablonów funkcji
+
+inline vs. multiple definition?
+
+
+Nie istnieją częściowe specjalizacje funkcji
+4 linijka slajd Overloading vs specializations
+
+funkcje składowe szablonów też nie mogą być częśćiowo specjalizowane
+
+Zamiast częściowej specjalizacji można zrobić przeciążenie funkcji
+Błędy związane z przeciążeniami są przyjemniejsze niż błędy linkera.
+
+Nie musimy zmieniać nagłówków
+
+Kolejność w cpp ma znaczenie
+
+SFINAE  /polska wymowa sfinej sfineing
+
+Substitution Failure Is Not An Error
+
+enable_if
+w booscie było też disable_if ale w c++11 nie jest już tak przydatne
+
+...  <- dowolna ilość wartości typu tego co poprzedza trzy kropki
+
+
+enable_if_t nie jest fajne bo daje nieczytelne błędy
+lepiej używać std::enable_if
+
+
+
