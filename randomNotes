@@ -62,4 +62,38 @@ decltype zwraca typ zwracany przez wyrażenie podane w argumencie
 
 
 
+Referencja nie jest dedukowana,
+tzn. jeśli nie zapiszemy, że coś jest refeferencją to to na pewno nie będzie referencją
+
+
+decltype podaje tylko zadeklarowany typ obiektu
+Jak podamy mu wyrażenie to dostaniemy typ wyrażenias
+
+ale poda nam referencję gdy wyrażenie zwróci Lvalue
+czyli wyrażenie które może być po lewej stronie przypisania
+np.
+
+int arr[10];
+static_assert(std::is_same<decltype(arr[0]), int &> :: value);
+static_assert(std::is_same<decltype((x)), int &> :: value);
+tutaj x nie zwraca referencji ale x w nawiasach jest Lvalue
+zatem typ który poda decltype będzie referencją
+
+Bo decltype jest wyspecyfikowany dla nazw i wyrażeń
+
+Po return nie dajemy nawiasów okrągłych bo to może zminić semantykę programu
+
+
+--------------------------------------------
+
+reference collapsing
+
+
+R and L value reference
+
+forwarding references
+
+
+
+
 
