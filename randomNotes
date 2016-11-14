@@ -1,6 +1,6 @@
 
-
-1z
+c++1z <- nieformalna flaga standartu c++17
+c++14
 c++11
 
 
@@ -36,6 +36,30 @@ w booscie było też disable_if ale w c++11 nie jest już tak przydatne
 
 enable_if_t nie jest fajne bo daje nieczytelne błędy
 lepiej używać std::enable_if
+
+-----------------------------------------------------------------
+Slajd Expression SINAE and void_t
+
+aaa -> decltype(bbb)    -------------- decltype(bbb) jest typem ale zapisane na końcu żeby było czytelniej.
+
+
+declval<U>() sprawia że mamy wartość z typu na którym możemy operować
+
+
+SFINAE działa tylko na depended context  
+
+SFINAE nie działa jak wszystkie typy są znane
+
+dlatego musimy wprowadzić dodatkowe zmienne np U
+
+
+duckt typing jak wygląda jak kaczka to jest kaczka
+
+
+decltype zwraca typ zwracany przez wyrażenie podane w argumencie
+
+-------------------------------------------------------------------
+
 
 
 
