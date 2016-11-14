@@ -1,0 +1,8 @@
+
+
+1z
+c++11
+
+
+te specjalizacje szablonów dla voida są dostępne od c++14 
+bo vector<bool> 
