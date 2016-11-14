@@ -101,4 +101,8 @@ czyli tak jak obiekt z nazwą albo bez nazwy
 forward
 przesyła dalej własność obiektu
 
+forwarding referencja vs. RValue referencja
+
+
+--------------------------------------------
 
