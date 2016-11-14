@@ -173,4 +173,16 @@ bottom type?
 unit type?
 
 
+-------------------------------------------------------
+
+std::monostate ???
+jak unit
+
+std::variant
+boost::variant
+std::tuple
+
+
+emplace konstruuje typ z podanego obiektu
+
 
