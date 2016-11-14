@@ -106,3 +106,71 @@ forwarding referencja vs. RValue referencja
 
 --------------------------------------------
 
+F && f nie jest Rvalue referencją a forwarding referencją
+bo f jest jako nazwa Lvalue referencją
+
+
+perfect forwarding
+służy do tego by nie kopiować i nie przesuwać żadnych obiektów
+bo potencjalnie przesuwanie to kopia.
+
+takie przekazywanie jest lepsze niż przekazywanie wskaźnika na funkcję
+
+----------------------------
+
+po nawiasie kwadratowym podajemy w lambda zmienne które chcemy przechywcić i wykorzystać w ciele lambdy. Wersja z '&' przechwyci wszystko przez referencję.
+
+lamda rozwija się do struktury który ma operator wywołania przeciążony z domyślnym operatorem const
+jeśli chcemy coś zmodyfikować to musimy napisać mutable
+Nie będziemy mogli z
+
+i=i, j=j, // generalizowane przechwytywanie zmiennych
+chcemy mieć zmienną 'i' zainicjowaną zmienną 'i'
+
+
+lambdę można przekonwertować na wskaźnik na funkcję
+operatorem plus ale tylko te lambdy, które nic nie przechwytują
+
+-----------------------------
+
+Variadic templates
+
+template<typename... Ts>  //paczka typów 
+auto min(Ts... ts)   // Paczkę typów rozwijamy jako listę typów oddzielonych przecinkami
+
+
+template<typename... Ts>
+class variant;
+
+
+---------------------------------------------
+
+recursive function application
+
+tutaj bardzo dużo czasu zajmuje kompilacja
+czasami kompilator nie zinlajnuje kodu
+
+warunek stopu w postaci specjalizacji szablonu funkcji dla wywołania jednego albo dwóch argumentów musi być napisana przed ogólną postacią szablonu. Inaczej się nie skompiluje.
+
+
+Args &&... // paczka forwarding referencjii
+
+operator przecinka
+najpierw wywołujemy kod po lewej potem po prawej i zwracamy to co jest po prawej
+(foo(), 0) // np. na wypadek gdyby foo() zwróciło voida
+
+
+Nie wiadomo w jakiej kolejności paczka wywołań się wykona
+zależy od kompilatora
+
+
+-----------------------------------
+
+Kolejność wszystkich wywołań jest zdefiniowana jedynia na liście inicjalizacyjnej i jest określona od lewej do prawej.
+
+
+bottom type?
+unit type?
+
+
+
