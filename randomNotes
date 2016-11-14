@@ -98,6 +98,7 @@ std::forward<F>(f)() potrafi wywołać funkcję jako L albo R value
 czyli tak jak obiekt z nazwą albo bez nazwy
 
 
-
+forward
+przesyła dalej własność obiektu
 
 
